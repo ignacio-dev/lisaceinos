@@ -1,0 +1,65 @@
+	@-webkit-keyframes fadeIn {
+		0% {opacity: 0; visibility: visible;}
+		100% {opacity: 1;}
+	}
+	@-webkit-keyframes fadeOut {
+		0% {opacity:1;}
+		100% {opacity: 0; visibility: hidden;}
+	}
+
+	@-moz-keyframes fadeIn {
+		0% {opacity: 0; visibility: visible;}
+		100% {opacity: 1;}
+	}
+	@-moz-keyframes fadeOut {
+		0% {opacity:1;}
+		100% {opacity: 0; visibility: hidden;}
+	}
+
+	@-o-keyframes fadeIn {
+		0% {opacity: 0; visibility: visible;}
+		100% {opacity: 1;}
+	}
+	@-o-keyframes fadeOut {
+		0% {opacity:1;}
+		100% {opacity: 0; visibility: hidden;}
+	}
+
+@keyframes fadeIn {
+	0% {opacity: 0; visibility: visible;}
+	100% {opacity: 1;}
+}
+@keyframes fadeOut {
+	0% {opacity:1;}
+	100% {opacity: 0; visibility: hidden;}
+}
+
+.fadeIn {
+		-webkit-animation: fadeIn;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-fill-mode: forwards;
+		-moz-animation: fadeIn;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-fill-mode: forwards;
+		-o-animation: fadeIn;
+		-o-animation-iteration-count: 1;
+		-o-animation-fill-mode: forwards;
+	animation: fadeIn;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.fadeOut {
+		-webkit-animation: fadeOut;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-fill-mode: forwards;
+		-moz-animation: fadeOut;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-fill-mode: forwards;
+		-o-animation: fadeOut;
+		-o-animation-iteration-count: 1;
+		-o-animation-fill-mode: forwards;
+	animation: fadeOut;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}

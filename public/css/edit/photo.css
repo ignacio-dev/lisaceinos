@@ -1,0 +1,85 @@
+#photo li {
+	position: relative;
+	opacity: 1;
+	margin-bottom: 20px;
+	cursor: default;
+}
+
+#saveBtn {
+	margin-right: 15px;
+}
+
+#photo figure {	
+	cursor: move;
+	outline-offset: -2px;
+}
+
+#photo figure:hover {
+	box-shadow: 0px 0px 10px #C3C3C3;
+	outline: 2px dotted orange;
+}
+
+.chooseFileContainer {
+	position: absolute;
+	left: 15px;
+	bottom: -30px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	overflow-wrap: break-word;
+	width: calc(100% - 30px);
+}
+
+.chooseFileBtn {
+	font-size: .9em;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#overlay.invisible {
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+
+#overlay.visible {
+	opacity: .4;
+	z-index: 11;
+	visibility: visible;
+	cursor: progress;
+}
+
+/* MODES */
+
+.dragMode {
+	animation: wiggle .25s ease-in-out;
+	animation-iteration-count: infinite;
+	cursor: move!important;
+}
+
+/* KEYFRAMES */
+
+@keyframes wiggle {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(1deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}

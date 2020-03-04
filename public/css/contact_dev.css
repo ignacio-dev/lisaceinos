@@ -1,0 +1,164 @@
+#contact {	
+	text-align: center;
+}
+
+form {
+	background: url(../img/paper.jpg);
+	background-position: left center;
+	padding: 75px 50px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+input, textarea, button, .captcha-container, form span.error {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+input, textarea, button {
+	display: block;
+	height: 40px;
+	box-sizing: border-box;
+}
+
+input, textarea {
+	background: transparent;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-bottom: 1px solid #7F7F7F;
+	color: #050406;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	border-color: #050406;
+}
+
+textarea {
+	min-height: 150px;
+	resize: none;
+	transition: height 0s;
+}
+
+button {
+	color: #050406;
+	font-family: HelveticaNeue-Heavy;
+	font-size: 19px;
+	letter-spacing: -1px;
+	background: transparent;
+	text-transform: lowercase;
+	text-align: right;
+	opacity: .7;
+	cursor: pointer;
+}
+
+button i {
+	margin-right: 5px;
+	position: relative;
+	left: 0;
+}
+
+button:hover {
+	opacity: 1;
+}
+
+button:hover i {
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	left: -7px;
+}
+
+.captcha-container {
+	margin-bottom: 15px;
+	text-align: right;
+	font-size: 0;
+}
+
+.g-recaptcha {
+	display: inline-block;
+}
+
+.g-recaptcha.error {
+	border: 2px solid red;	
+}
+
+form span.error {
+	display: block;
+	margin-bottom: 15px;
+	text-align: right;
+}
+
+form.submitted input:invalid, form.submitted textarea:invalid {
+	border-color: red;
+}
+
+@media all and (max-width: 775px) {
+	html, form {
+		height: 100%;
+	}
+
+	body {
+		height: calc(100% - 139px); /* Header's height */
+		margin-bottom: 0;
+	}
+
+	#contact {
+		height: calc(100% - 60px);
+	}
+
+	textarea {
+		min-height: 200px;
+	}
+}
+
+@media all and (max-width: 540px) {
+	body {
+		height: calc(100% - 89px); /* Header's height */
+	}
+
+	#contact {
+		height: calc(100% - 6px);
+		padding: 0;
+	}
+	
+	form {
+		padding: 30px 15px;
+	}	
+}
+
+@media all and (max-width: 320px) {
+	html, body, #contact, form {
+		height: auto;
+	}
+	
+	#contact {
+		padding-bottom: 6px;
+	}
+
+	.captcha-container {
+	-webkit-transform: scale(.92);
+	   -moz-transform: scale(.92);
+	    -ms-transform: scale(.92);
+	     -o-transform: scale(.92);
+	        transform: scale(.92);
+	-webkit-transform-origin: left;
+	   -moz-transform-origin: left;
+	    -ms-transform-origin: left;
+	     -o-transform-origin: left;
+	        transform-origin: left;
+	}
+}
+
+@media all and (max-width: 775px) and (max-height: 850px) {
+	html, body, #contact, form {
+		height: auto;
+	}
+
+	#contact {
+		padding-bottom: 6px;
+	}
+}

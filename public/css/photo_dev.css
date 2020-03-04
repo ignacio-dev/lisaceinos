@@ -1,0 +1,62 @@
+#photo {
+	padding: 0!important;
+}
+
+#photo ul {
+	margin-top: -15px;
+}
+
+#photo li {
+	display: block;
+	float: left;
+	width: 25%;
+	cursor: pointer;
+	box-sizing: border-box;
+	opacity: .8;
+	will-change: opacity;
+}
+
+#photo li:hover {
+	opacity: 1;
+}
+
+#photo li:hover figure {
+	box-shadow: 0px 0px 10px #C3C3C3;
+}
+
+#photo li figure {
+	margin: 15px;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#photo li figure:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+	position: relative;
+	z-index: -1;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1028px) {
+	#photo li {
+		width: 33.33%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	#photo li {
+		width: 50%;
+		opacity: 1;
+	}
+}
+
+@media all and (max-width: 480px) {
+	#photo li {
+		width: 100%;
+	}
+}

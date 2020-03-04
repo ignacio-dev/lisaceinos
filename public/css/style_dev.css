@@ -1,0 +1,117 @@
+/* white - fcfafa ///// black - 050406 */
+@font-face {
+	font-family: HelveticaNeue-Heavy;
+	src: url(../fonts/HelveticaNeue-Heavy.ttf);
+}
+
+@font-face {
+	font-family: FuturaStd-Bold;
+	src: url(../fonts/FuturaStd-Bold.ttf);
+}
+
+html, body, header {
+	background: #fcfafa;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto;
+	color: #050406;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+
+body, header {
+	max-width: 950px;
+}
+
+* {
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	     -o-transition: all .2s;
+            transition: all .2s;
+}
+
+*::selection {
+	background: #050406; 
+	color: #fcfafa;
+}
+
+*::-moz-selection {
+	background: #050406); 
+	color: #fcfafa;	
+}
+
+a, figure, img {
+	will-change: opacity;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+h1, h2 {
+	font-family: FuturaStd-Bold;
+}
+
+h1 {
+	font-size: 33px;
+}
+
+h2 {
+	text-transform: uppercase;
+	line-height: 1.3em;
+}
+
+.subtitle {
+	opacity: .6;
+}
+
+.error {
+	color: red;
+}
+
+.success {
+	color: green;
+}
+
+.active {
+	opacity: 1!important;
+	cursor: default!important;
+}
+
+p {
+	line-height: 2em;
+}
+
+em {
+	font-weight: bolder;
+}
+
+main {
+	clear: both;
+	padding: 0 15px;
+	margin-top: 139px;
+	position: relative;
+}
+
+.clearfix {
+	clear: both;
+	margin-bottom: -15px;
+}
+
+@media all and (max-width: 1100px) {
+	body, header {
+		width: 90%!important;
+	}
+}
+
+@media all and (max-width: 540px) {
+	body, header {
+		width: 97%!important;
+	}
+
+	main {
+		margin-top: 89px;
+	}
+}

@@ -1,0 +1,96 @@
+/* GENERAL */
+* {
+	box-sizing: border-box;
+}
+
+form h1 {
+	margin: 0 0 20px 0;
+}
+
+h1 sup {
+	font-size: 10px;
+	margin-left: 10px;
+	position: relative;
+	top: -5px;
+}
+
+header h1 sup {
+	position: relative!important;
+	top: -17px!important;
+}
+
+a {
+	color: inherit;
+}
+
+#saveBtn {
+	font-family: HelveticaNeue-Heavy;
+	font-size: 18px;
+	margin-top: 15px;
+	width: auto;
+	background: transparent;
+	float: right;
+	opacity: .6;
+	will-change: opacity;
+	cursor: pointer;
+}
+
+#saveBtn:hover {
+	opacity: 1;
+}
+
+/* NAV */
+.logout i {
+	font-size: 15px;
+}
+
+/* FORMS */
+form {
+	background: rgba(5,4,6,.1);
+	margin: 85px auto;
+	max-width: 375px;
+	padding: 55px;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 20px;
+}
+
+form input {
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+form a {
+	margin-left: 20px;
+}
+
+form p {
+	line-height: 1em;
+	margin-bottom: 30px;
+}
+
+form span {
+	display: block;
+	text-align: left;
+	position: relative;
+	top: -10px;
+}
+
+form button {
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+}
+
+hr {
+	margin-bottom: 25px;
+	border-color: #ddd;
+}
+
+@media (max-width: 355px) {
+	form {
+		padding: 50px 25px;
+	}
+}
