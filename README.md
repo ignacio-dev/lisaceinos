@@ -1,6 +1,7 @@
 
+
 # LISA CEINOS
-Porftolio website built in object-oriented PHP using the Model-View-Controller design pattern.
+Portfolio website built in object-oriented PHP using the Model-View-Controller design pattern.
 
 ***
 ## Technologies
@@ -84,7 +85,7 @@ Example:
 ```php
 class About extends Controller {
 	public function __construct() {
-		$this->bioModel = $this->model('Bio');
+		$this->bioModel = $this->model('Bios');
 	}
 
 	public function index() {
@@ -103,7 +104,7 @@ Located inside the _model_ folder at the _app_ root. Different models can provid
 Example:
 
 ```php
-class Bio {
+class Bios {
 	private $db;
 
 	public function __construct() {
