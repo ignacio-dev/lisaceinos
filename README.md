@@ -84,7 +84,7 @@ Example:
 ```php
 class About extends Controller {
 	public function __construct() {
-		$this->bioModel = $this->model('Bios');
+		$this->bioModel = $this->model('Bio');
 	}
 
 	public function index() {
@@ -103,7 +103,7 @@ Located inside the _model_ folder at the _app_ root. Different models can provid
 Example:
 
 ```php
-class Bios {
+class Bio {
 	private $db;
 
 	public function __construct() {
